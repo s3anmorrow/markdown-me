@@ -8,6 +8,11 @@ python md-me.py
 ``` 
 The script will go through all word document files and convert them to markdown and do some minor formatting fixes.
 
+Some tweaks that will need to be done with the generated md files:
+- all markdown characters (-,>,<,*,#,etc) will be escaped with a backslash - this is required for normal text but in code blocks (marked with ```) will be make the code unreadable
+- indentation will need to be done to get the tabbing correct
+- code blocks will be formatted correctly if a ''' is added around the code blocks in the word document prior to conversion
+
 ## Requirements
 - Pandoc (https://pandoc.org/installing.html)
 - Python 3 (https://www.python.org/downloads/ or install via MS Store)
