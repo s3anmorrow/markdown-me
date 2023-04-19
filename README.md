@@ -13,7 +13,12 @@ Some tweaks that will need to be done with the generated md files:
 - indentation will need to be done to get the tabbing correct
 - code blocks will be formatted correctly if a ''' is added around the code blocks in the word document prior to conversion. Can be automated in word: 
     - do an "Advanced Find and Replace" searching for New Courier font (font used for all code snippets in my lesson plans)
-    - replace with ```^l^&```^l
+    - do replace all with ```^l^&```^l
+
+Good markdown references: 
+- https://pandao.github.io/editor.md/en.html
+- https://guides.github.com/features/mastering-markdown/
+- https://www.markdownguide.org/cheat-sheet/ 
 
 ## Requirements
 - Pandoc (https://pandoc.org/installing.html)
