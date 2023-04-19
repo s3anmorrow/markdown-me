@@ -65,6 +65,7 @@ def main():
                     line = line.replace("\> ", "- ")
                     line = line.replace("> ", "")
                     line = line.replace("\`\`\`","```")
+                    line = line.replace("`\\","`")
 
                     if (bulleting) and ("**" not in line) and ("#" not in line) and (line != ""):
                         line = "- " + line
@@ -83,6 +84,11 @@ def main():
                         line = line.replace("\#", "#")
                         line = line.replace("\$", "$")
                         line = line.replace("\\\\", "\\")
+                    else:
+                        line = line.replace("\<div-","\<div\>")
+                        line = line.replace("\<body-","\<body\>")
+                        line = line.replace("\<span-","\<span\>")
+                        line = line.replace("\<i-","\<i\>")
 
                     newline = "\n"
                     if (line == ">"):
