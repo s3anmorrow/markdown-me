@@ -11,7 +11,9 @@ The script will go through all word document files and convert them to markdown 
 Some tweaks that will need to be done with the generated md files:
 - all markdown characters (-,>,<,*,#,etc) will be escaped with a backslash - this is required for normal text but in code blocks (marked with ```) will be make the code unreadable
 - indentation will need to be done to get the tabbing correct
-- code blocks will be formatted correctly if a ''' is added around the code blocks in the word document prior to conversion
+- code blocks will be formatted correctly if a ''' is added around the code blocks in the word document prior to conversion. Can be automated in word: 
+    - do an "Advanced Find and Replace" searching for New Courier font (font used for all code snippets in my lesson plans)
+    - replace with ```^l^&```^l
 
 ## Requirements
 - Pandoc (https://pandoc.org/installing.html)

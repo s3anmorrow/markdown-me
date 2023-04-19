@@ -22,6 +22,7 @@ def main():
     print("\033[0;31m","MD-ME -> Markdown Me v1.0 - Sean Morrow [Apr 2023]")
 
     unitFolders = getFolders("./")
+    unitFolders.append(".")
 
     for unitFolder in unitFolders:
 
